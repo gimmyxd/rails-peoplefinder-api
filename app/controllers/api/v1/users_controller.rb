@@ -6,7 +6,7 @@ module Api
       skip_before_action :authenticate_request, only: [:create]
       before_action :set_user, only: %i[show destroy]
       def show
-        render json: { success: true, data: User.first.as_json(except: :password_digest) }
+        render json: { success: true, data: User.find(params[:id]).as_json(except: :password_digest) }
       end
 
       def index
