@@ -14,7 +14,7 @@ module JsonWebToken
   def jwt_decode(token)
     JWT.decode(token, SECRET_KEY)[0].symbolize_keys
   rescue JWT::DecodeError => e
-    puts e.message
+    Rails.logger.debug e.message
     nil
   end
 end
