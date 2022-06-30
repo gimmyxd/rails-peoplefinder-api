@@ -1,0 +1,29 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  Exclude:
+    - vendor/bundle/**/*
+    - bin/**/*
+
+require:
+ - rubocop-rspec
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 25
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+RSpec/DescribeClass:
+  Enabled: true
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ExampleLength:
+  Max: 20

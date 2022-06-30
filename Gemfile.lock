@@ -4,6 +4,7 @@ PATH
     aserto (0.0.1)
       aserto-grpc-authz (~> 0.0.6)
       jwt (~> 2.4)
+      rack (~> 2.0)
 
 GEM
   remote: https://rubygems.org/

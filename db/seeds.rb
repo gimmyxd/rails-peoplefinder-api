@@ -7,6 +7,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 
-User.create(email: 'test@email.com')
-User.create(email: 'test2@email.com')
-User.create(email: 'test3@email.com')
+User.create(email: "test@email.com")
+User.create(email: "test2@email.com")
+User.create(email: "test3@email.com")
