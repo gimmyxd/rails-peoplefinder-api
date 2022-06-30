@@ -9,6 +9,7 @@
 # end
 
 Rails.application.config.middleware.use Aserto::Authorization do |config|
+  # config.enabled = false
   config.policy_id = '8a402085-b044-11ec-a3c0-01e16a9c7735'
   config.tenant_id = '45bfc282-1533-11ec-9980-00e16a9c7735'
   config.authorizer_api_key = Rails.application.credentials.aserto[:authorizer_api_key]
