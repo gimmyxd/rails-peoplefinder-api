@@ -24,7 +24,7 @@ Rails.application.config.middleware.use Aserto::Authorization do |config|
   config.disabled_for = [
     {
       controller: "api/v1/users",
-      actions: %i[show]
+      actions: %i[create]
     },
     {
       controller: "api/v1/authentication",
