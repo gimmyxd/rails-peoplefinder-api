@@ -2,7 +2,7 @@
 Add your authorization key
 
 ```
-# create an `.env` file and add the api key
+# create a `.env` file and add the API key
 AUTHORIZER_API_KEY=
 ```
 
@@ -10,7 +10,7 @@ Update `config/initializers/aserto.rb` with the specific config for your policy.
 
 ```bash
 # start the container
-❯ docker-compose up --build
+❯ docker-compose  --env-file .env  up --build
 
 # setup an user
 ❯ curl -v --request POST \
