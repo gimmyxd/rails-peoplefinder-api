@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/gimmy/Workspace/ruby/aserto-ruby
+GIT
+  remote: https://github.com/aserto-dev/aserto-ruby.git
+  revision: 432f1b766f8f91968f4b76ba178eca82e3e66a22
+  branch: main
   specs:
     aserto (0.0.1)
       aserto-grpc-authz (~> 0.0.6)
@@ -93,7 +95,7 @@ GEM
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    google-protobuf (3.21.1)
+    google-protobuf (3.21.2)
     googleapis-common-protos-types (1.3.2)
       google-protobuf (~> 3.14)
     grpc (1.46.3)
