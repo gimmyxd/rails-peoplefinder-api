@@ -1,13 +1,3 @@
-GIT
-  remote: https://github.com/aserto-dev/aserto-ruby.git
-  revision: 432f1b766f8f91968f4b76ba178eca82e3e66a22
-  branch: main
-  specs:
-    aserto (0.0.1)
-      aserto-grpc-authz (~> 0.0.6)
-      jwt (~> 2.4)
-      rack (~> 2.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -76,7 +66,11 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    aserto-grpc-authz (0.0.6)
+    aserto (0.0.1)
+      aserto-grpc-authz (~> 0.0.6)
+      jwt (~> 2.4)
+      rack (~> 2.0)
+    aserto-grpc-authz (0.0.7)
       grpc (~> 1.46)
     ast (2.4.2)
     bcrypt (3.1.18)
@@ -98,7 +92,7 @@ GEM
     google-protobuf (3.21.2)
     googleapis-common-protos-types (1.3.2)
       google-protobuf (~> 3.14)
-    grpc (1.46.3)
+    grpc (1.47.0)
       google-protobuf (~> 3.19)
       googleapis-common-protos-types (~> 1.0)
     i18n (1.10.0)
@@ -106,6 +100,7 @@ GEM
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
+    json (2.6.2)
     jwt (2.4.1)
     loofah (2.18.0)
       crass (~> 1.0.2)
@@ -116,8 +111,8 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.1)
-    msgpack (1.5.2)
+    minitest (5.16.2)
+    msgpack (1.5.3)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -149,8 +144,8 @@ GEM
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3.1)
-    rack-test (2.0.1)
+    rack (2.2.4)
+    rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.3)
       actioncable (= 7.0.3)
@@ -201,7 +196,8 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.0)
-    rubocop (1.31.0)
+    rubocop (1.31.1)
+      json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -212,15 +208,15 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.18.0)
       parser (>= 3.1.1.0)
-    rubocop-performance (1.14.0)
+    rubocop-performance (1.14.2)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rails (2.14.2)
+    rubocop-rails (2.15.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
-    rubocop-rspec (2.11.1)
-      rubocop (~> 1.19)
+    rubocop-rspec (2.12.1)
+      rubocop (~> 1.31)
     ruby-progressbar (1.11.0)
     strscan (3.0.3)
     thor (1.2.1)
@@ -237,7 +233,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aserto!
+  aserto
   bcrypt
   bootsnap
   debug
