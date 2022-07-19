@@ -14,7 +14,7 @@ Rails.application.config.middleware.use Aserto::Authorization do |config|
   config.tenant_id = "45bfc282-1533-11ec-9980-00e16a9c7735"
   config.authorizer_api_key = ENV.fetch("AUTHORIZER_API_KEY", nil)
   config.policy_root = "peoplefinder"
-  config.authorizer_url = "authorizer.eng.aserto.com:8443"
+  config.service_url = "authorizer.eng.aserto.com:8443"
   config.decision = "allowed"
   config.logger = Rails.logger
   config.identity_mapping = {
